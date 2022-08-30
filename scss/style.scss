@@ -98,7 +98,7 @@ body {
         color: var(--very-dark-blue);
         font-size: 3.6em;
         font-weight: 700;
-        line-height: 1.05;
+        line-height: 1;
         margin: 0;
     }
 
@@ -110,13 +110,13 @@ body {
 
     &__pricing {
         align-items: center;
-        margin-bottom: 2em;
+        margin-bottom: 2.2em;
     }
 }
 
 .pricing {
     color: var(--dark-cyan);
-    font-size: 3.6em;
+    font-size: 3.2em;
     font-weight: 700;
 }
 
@@ -134,18 +134,26 @@ body {
 .btn {
     width: 100%;
     border: none;
-    padding: 1.5em 0;
+    padding: 1.2em 0;
     background-color: var(--dark-cyan);
     color: var(--white);
-    border-radius: 0.8em;
-    -webkit-border-radius: 0.8em;
-    -moz-border-radius: 0.8em;
-    -ms-border-radius: 0.8em;
-    -o-border-radius: 0.8em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
     font-size: 1.4em;
     font-weight: 500;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    transition-property: background-color;
 
     &__icon {
         margin-right: 0.6em;
     }
+
+    &:hover {
+        background-color: var(--very-dark-cyan);
+    }
 }
+
