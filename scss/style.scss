@@ -63,6 +63,7 @@ body {
 }
 
 .card {
+    margin: 3.5em auto;
     width: 600px;
     height: 450px;
     background-color: var(--white);
@@ -157,3 +158,31 @@ body {
     }
 }
 
+@media screen and (max-width: 650px) {
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px auto;
+        width: 345px;
+        height: auto;
+
+        &__aside {
+            background-image: url('../images/image-product-mobile.jpg');
+        }
+
+        &__content {
+            padding: 2.5em;
+        }
+
+        &__tag {
+            margin: 0 0 1.2em 0;
+        }
+
+        &__title {
+            font-size: 3.3em;
+        }
+
+        &__copy {
+            margin: 1.4em 0;
+        }
+    }
+}

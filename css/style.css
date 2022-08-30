@@ -59,6 +59,7 @@ body {
 }
 
 .card {
+  margin: 3.5em auto;
   width: 600px;
   height: 450px;
   background-color: var(--white);
@@ -143,4 +144,28 @@ body {
 }
 .btn:hover {
   background-color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px auto;
+    width: 345px;
+    height: auto;
+  }
+  .card__aside {
+    background-image: url("../images/image-product-mobile.jpg");
+  }
+  .card__content {
+    padding: 2.5em;
+  }
+  .card__tag {
+    margin: 0 0 1.2em 0;
+  }
+  .card__title {
+    font-size: 3.3em;
+  }
+  .card__copy {
+    margin: 1.4em 0;
+  }
 }/*# sourceMappingURL=style.css.map */
